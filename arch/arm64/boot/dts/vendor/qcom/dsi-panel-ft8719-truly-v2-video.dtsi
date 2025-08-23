@@ -3,11 +3,8 @@
 		qcom,mdss-dsi-panel-name =
 			"ft8719 v2 video mode dsi truly panel";
 		qcom,mdss-dsi-panel-type = "dsi_video_mode";
-
 		qcom,dsi-ctrl-num = <0>;
 		qcom,dsi-phy-num = <0>;
-
-		//qcom,mdss-dsi-panel-mode-switch;
 		qcom,mdss-dsi-virtual-channel-id = <0>;
 		qcom,mdss-dsi-stream = <0>;
 		qcom,mdss-dsi-h-left-border = <0>;
@@ -32,11 +29,11 @@
 		qcom,mdss-dsi-mdp-trigger = "none";
 		qcom,mdss-dsi-lp11-init;
 		qcom,mdss-dsi-reset-sequence = <1 5>, <0 2>, <1 20>;
-		qcom,mdss-pan-physical-width-dimension = <65>;
-		qcom,mdss-pan-physical-height-dimension = <129>;
+		qcom,mdss-pan-physical-width-dimension = <69>;
+		qcom,mdss-pan-physical-height-dimension = <150>;
 		qcom,mdss-dsi-te-pin-select = <1>;
-		qcom,mdss-dsi-wr-mem-start = <0x2c>;
-		qcom,mdss-dsi-wr-mem-continue = <0x3c>;
+		qcom,mdss-dsi-wr-mem-start = <44>;
+		qcom,mdss-dsi-wr-mem-continue = <60>;
 		qcom,mdss-dsi-te-dcs-command = <1>;
 		qcom,mdss-dsi-te-check-enable;
 		qcom,mdss-dsi-te-using-te-pin;
@@ -80,18 +77,10 @@
 					05 01 00 00 8C 00 02 10 00
 					39 01 00 00 00 00 02 00 00
 					39 01 00 00 00 00 05 F7 5A A5 95 27];
-				qcom,mdss-dsi-cabc-on-command = [
-				39 01 00 00 00 00 02 55 01
-				];
-				qcom,mdss-dsi-cabc-off-command = [
-				39 01 00 00 00 00 02 55 00
-				];
-				qcom,mdss-dsi-cabc_movie-on-command = [
-				39 01 00 00 00 00 02 55 03
-				];
-				qcom,mdss-dsi-cabc_still-on-command = [
-				39 01 00 00 00 00 02 55 02
-				];
+				qcom,mdss-dsi-cabc-on-command = [39 01 00 00 00 00 02 55 01];
+				qcom,mdss-dsi-cabc-off-command = [39 01 00 00 00 00 02 55 00];
+				qcom,mdss-dsi-cabc_movie-on-command = [39 01 00 00 00 00 02 55 03];
+				qcom,mdss-dsi-cabc_still-on-command = [39 01 00 00 00 00 02 55 02];
 				qcom,mdss-dsi-on-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
 				qcom,mdss-dsi-cabc-on-command-state = "dsi_hs_mode";
